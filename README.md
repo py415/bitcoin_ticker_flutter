@@ -24,7 +24,9 @@ Bitcoin Ticker is an app that will give you the latest Bitcoin prices in all the
 
 Here's a GIF of how the app works:
 
-<img src="ADD_GIF_LINK" width=250>
+<img src="https://user-images.githubusercontent.com/35745973/84619453-fb69f800-ae89-11ea-9bc8-74d2b2641978.gif" width=250>
+
+<img src="https://user-images.githubusercontent.com/35745973/84619447-f5741700-ae89-11ea-9dc9-f0eb4a343b8d.gif" width=250>
 
 ## APIs
 
