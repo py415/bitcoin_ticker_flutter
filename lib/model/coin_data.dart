@@ -1,4 +1,5 @@
 import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 
 const List<String> currenciesList = [
@@ -31,20 +32,21 @@ const List<String> cryptoList = [
   'LTC',
 ];
 
-const bitcoinAverageURL =
-    'https://apiv2.bitcoinaverage.com/indices/global/ticker';
+const bitcoinAverageURL = 'https://rest.coinapi.io/v1/exchangerate';
+const apiKey = 'YOUR-API-KEY-HERE';
 
 class CoinData {
   Future getCoinData(String selectedCurrency) async {
-    Map<String, String> cryptoPrices = {};
+    var cryptoPrices = <String, String>{};
 
-    for (String crypto in cryptoList) {
-      String requestURL = '$bitcoinAverageURL/$crypto$selectedCurrency';
-      http.Response response = await http.get(requestURL);
+    for (var crypto in cryptoList) {
+      var requestURL =
+          '$bitcoinAverageURL/$crypto/$selectedCurrency?apikey=$apiKey';
+      var response = await http.get(requestURL);
 
       if (response.statusCode == 200) {
         var decodedData = jsonDecode(response.body);
-        double lastPrice = decodedData['last'];
+        double lastPrice = decodedData['rate'];
         cryptoPrices[crypto] = lastPrice.toStringAsFixed(0);
       } else {
         print(response.statusCode);
