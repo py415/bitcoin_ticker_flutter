@@ -24,9 +24,9 @@ Bitcoin Ticker is an app that will give you the latest Bitcoin prices in all the
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/84619453-fb69f800-ae89-11ea-9bc8-74d2b2641978.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/ios/flutter-ios-bitcoin-ticker.gif" width=250>
 
-<img src="https://user-images.githubusercontent.com/35745973/84619447-f5741700-ae89-11ea-9dc9-f0eb4a343b8d.gif" width=250>
+<img src="https://github.com/py415/app-resources/blob/master/flutter/android/flutter-android-bitcoin-ticker.gif" width=250>
 
 ## APIs
 
@@ -34,7 +34,9 @@ Here's a GIF of how the app works:
 
 ## Libraries
 
+- [cupertino_icons](https://github.com/flutter/cupertino_icons) - This is an asset repo containing the default set of icon assets used by Flutter's [Cupertino widgets](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/cupertino).
 - [http](https://github.com/dart-lang/http) - A composable, Future-based library for making HTTP requests.
+- [pedantic](https://github.com/dart-lang/pedantic) - Most of the recommended lints directly implement the guidelines set out in [Effective Dart](https://dart.dev/guides/language/effective-dart).
 
 ## Credits
 
